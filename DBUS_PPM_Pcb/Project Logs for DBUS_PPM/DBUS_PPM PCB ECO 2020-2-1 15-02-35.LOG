@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=5V_IN Pin=P7-1
+Removed Pin From Net: NetName=GND Pin=P7-6
+Removed Pin From Net: NetName=PB12 Pin=R8-1
+Removed Pin From Net: NetName=PB13 Pin=R8-2
+Removed Pin From Net: NetName=PB14 Pin=R8-3
+Removed Pin From Net: NetName=PB15 Pin=R8-4
+Removed Member From Class: ClassName=DBUS_PPM Member=P7
+Removed Member From Class: ClassName=DBUS_PPM Member=R8
+Added Room: Name=DBUS_PPM

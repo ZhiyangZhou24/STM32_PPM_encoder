@@ -1,0 +1,48 @@
+Change Component Designator: OldDesignator=*? NewDesignator=*4
+Change Component Designator: OldDesignator=D? NewDesignator=D1
+Change Component Designator: OldDesignator=P? NewDesignator=P1
+Change Component Designator: OldDesignator=P? NewDesignator=P2
+Change Component Designator: OldDesignator=P? NewDesignator=P3
+Change Component Designator: OldDesignator=P? NewDesignator=P4
+Change Component Designator: OldDesignator=P? NewDesignator=P5
+Change Component Designator: OldDesignator=P? NewDesignator=P6
+Change Component Designator: OldDesignator=P? NewDesignator=P7
+Change Component Designator: OldDesignator=P? NewDesignator=P8
+Change Component Designator: OldDesignator=P? NewDesignator=P9
+Change Component Designator: OldDesignator=Q? NewDesignator=Q1
+Change Component Designator: OldDesignator=R? NewDesignator=R1
+Change Component Designator: OldDesignator=R? NewDesignator=R2
+Change Component Designator: OldDesignator=R? NewDesignator=R3
+Change Component Designator: OldDesignator=R? NewDesignator=R4
+Change Component Designator: OldDesignator=R? NewDesignator=R5
+Change Component Designator: OldDesignator=R? NewDesignator=R6
+Change Component Designator: OldDesignator=U? NewDesignator=U1
+Change Component Designator: OldDesignator=U? NewDesignator=U2
+Change Net Name : Old Net Name=Net*?_5 New Net Name=Net*4_5
+Change Net Name : Old Net Name=Net*?_6 New Net Name=Net*4_6
+Change Net Name : Old Net Name=Net*?_7 New Net Name=Net*4_7
+Change Net Name : Old Net Name=Net*?_8 New Net Name=Net*4_8
+Change Net Name : Old Net Name=NetP?_3 New Net Name=NetP9_3
+Change Net Name : Old Net Name=NetQ?_2 New Net Name=NetQ1_2
+Added Member To Class: ClassName=DBUS_PPM Member=Component * cap
+Added Member To Class: ClassName=DBUS_PPM Member=Component * cap
+Added Member To Class: ClassName=DBUS_PPM Member=Component * cap
+Added Member To Class: ClassName=DBUS_PPM Member=Component * 0603*4
+Added Member To Class: ClassName=DBUS_PPM Member=Component * cap
+Added Member To Class: ClassName=DBUS_PPM Member=Component * cap
+Added Member To Class: ClassName=DBUS_PPM Member=Component * LED_RGB
+Added Member To Class: ClassName=DBUS_PPM Member=Component P1 Header 4
+Added Member To Class: ClassName=DBUS_PPM Member=Component P2 Header 4
+Added Member To Class: ClassName=DBUS_PPM Member=Component P3 Header 4
+Added Member To Class: ClassName=DBUS_PPM Member=Component P4 Header 4
+Added Member To Class: ClassName=DBUS_PPM Member=Component P5 Header 4
+Added Member To Class: ClassName=DBUS_PPM Member=Component P6 Header 6
+Added Member To Class: ClassName=DBUS_PPM Member=Component P8 Header 3
+Added Member To Class: ClassName=DBUS_PPM Member=Component P9 Header 3
+Added Member To Class: ClassName=DBUS_PPM Member=Component R2 100R
+Added Member To Class: ClassName=DBUS_PPM Member=Component R3 100R
+Added Member To Class: ClassName=DBUS_PPM Member=Component R4 100R
+Added Member To Class: ClassName=DBUS_PPM Member=Component R5 100R
+Added Member To Class: ClassName=DBUS_PPM Member=Component R6 100R
+Added Member To Class: ClassName=DBUS_PPM Member=Component U2 TPS79333
+Added Room: Name=DBUS_PPM

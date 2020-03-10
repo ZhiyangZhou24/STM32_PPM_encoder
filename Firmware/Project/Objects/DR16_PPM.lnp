@@ -1,0 +1,19 @@
+--cpu Cortex-M3
+".\objects\system_stm32f10x.o"
+".\objects\startup_stm32f10x_md.o"
+".\objects\misc.o"
+".\objects\stm32f10x_gpio.o"
+".\objects\stm32f10x_rcc.o"
+".\objects\stm32f10x_tim.o"
+".\objects\stm32f10x_usart.o"
+".\objects\main.o"
+".\objects\stm32f10x_it.o"
+".\objects\scheduler.o"
+".\objects\rgbled.o"
+".\objects\bsp.o"
+".\objects\bsp_timer.o"
+".\objects\bsp_usart.o"
+--strict --scatter ".\Objects\DR16_PPM.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\DR16_PPM.map" -o .\Objects\DR16_PPM.axf

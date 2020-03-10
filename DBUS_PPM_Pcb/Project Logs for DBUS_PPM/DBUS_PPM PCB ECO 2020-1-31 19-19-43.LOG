@@ -1,0 +1,34 @@
+Removed Pin From Net: NetName=PWM4 Pin=*4-1
+Removed Pin From Net: NetName=PWM3 Pin=*4-2
+Removed Pin From Net: NetName=PWM2 Pin=*4-3
+Removed Pin From Net: NetName=PWM1 Pin=*4-4
+Removed Member From Class: ClassName=DBUS_PPM Member=*6
+Change Component Designator: OldDesignator=*5 NewDesignator=*3
+Change Component Designator: OldDesignator=*6 NewDesignator=*4
+Added Component: Designator=*2(0603*4ÅÅ×è)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=PWM4 Pin=*2-1
+Added Pin To Net: NetName=PWM3 Pin=*2-2
+Added Pin To Net: NetName=PWM2 Pin=*2-3
+Added Pin To Net: NetName=PWM1 Pin=*2-4
+Change Net Name : Old Net Name=Net*5_1 New Net Name=Net*3_1
+Change Net Name : Old Net Name=Net*5_2 New Net Name=Net*3_2
+Change Net Name : Old Net Name=Net*5_3 New Net Name=Net*3_3
+Change Net Name : Old Net Name=Net*6_5 New Net Name=Net*4_5
+Change Net Name : Old Net Name=Net*6_6 New Net Name=Net*4_6
+Change Net Name : Old Net Name=Net*6_7 New Net Name=Net*4_7
+Change Net Name : Old Net Name=Net*6_8 New Net Name=Net*4_8
+Added Pin To Net: NetName=Net*2_5 Pin=*2-5
+Added Pin To Net: NetName=Net*2_5 Pin=P6-5
+Added Net: Name=Net*2_5
+Added Pin To Net: NetName=Net*2_6 Pin=*2-6
+Added Pin To Net: NetName=Net*2_6 Pin=P6-4
+Added Net: Name=Net*2_6
+Added Pin To Net: NetName=Net*2_7 Pin=*2-7
+Added Pin To Net: NetName=Net*2_7 Pin=P6-3
+Added Net: Name=Net*2_7
+Added Pin To Net: NetName=Net*2_8 Pin=*2-8
+Added Pin To Net: NetName=Net*2_8 Pin=P6-2
+Added Net: Name=Net*2_8
+Added Member To Class: ClassName=DBUS_PPM Member=Component *2 0603*4
+Added Room: Name=DBUS_PPM

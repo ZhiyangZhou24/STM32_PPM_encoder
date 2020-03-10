@@ -1,0 +1,4 @@
+Change Component Designator: OldDesignator=C? NewDesignator=C9
+Change Component Designator: OldDesignator=C? NewDesignator=C10
+Added Member To Class: ClassName=DBUS_PPM Member=Component C10 0.1uF
+Added Room: Name=DBUS_PPM

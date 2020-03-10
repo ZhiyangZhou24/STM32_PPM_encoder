@@ -1,0 +1,54 @@
+Removed Pin From Net: NetName=GND Pin=*3-2
+Removed Pin From Net: NetName=GND Pin=*8-1
+Removed Pin From Net: NetName=VCC_5V Pin=*8-2
+Removed Pin From Net: NetName=GND Pin=*9-1
+Removed Pin From Net: NetName=GND Pin=*10-1
+Removed Pin From Net: NetName=VCC_3V3 Pin=*10-2
+Removed Pin From Net: NetName=GND Pin=*11-1
+Removed Pin From Net: NetName=VCC_5V Pin=*11-2
+Removed Pin From Net: NetName=GND Pin=*12-1
+Removed Pin From Net: NetName=VCC_3V3 Pin=C7-2
+Removed Member From Class: ClassName=DBUS_PPM Member=*3
+Removed Member From Class: ClassName=DBUS_PPM Member=*8
+Removed Member From Class: ClassName=DBUS_PPM Member=*9
+Removed Member From Class: ClassName=DBUS_PPM Member=*10
+Removed Member From Class: ClassName=DBUS_PPM Member=*11
+Removed Member From Class: ClassName=DBUS_PPM Member=*12
+Change Component Comment : Designator=C7 Old Comment=cap New Comment=104
+Added Component: Designator=C2(0603-C)
+Add component. Clean all parameters for all variants
+Added Component: Designator=C3(0603-C)
+Add component. Clean all parameters for all variants
+Added Component: Designator=C4(0603-C)
+Add component. Clean all parameters for all variants
+Added Component: Designator=C5(0603-C)
+Add component. Clean all parameters for all variants
+Added Component: Designator=C6(0603-C)
+Add component. Clean all parameters for all variants
+Added Component: Designator=C8(0603-C)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=VCC_3V3 Pin=C3-2
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=VCC_5V Pin=C4-2
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=VCC_3V3 Pin=C6-2
+Added Pin To Net: NetName=VCC_5V Pin=C7-2
+Added Pin To Net: NetName=GND Pin=C8-1
+Added Pin To Net: NetName=NetC2_1 Pin=C2-1
+Added Pin To Net: NetName=NetC2_1 Pin=Y1-3
+Added Net: Name=NetC2_1
+Added Pin To Net: NetName=NetC5_2 Pin=C5-2
+Added Pin To Net: NetName=NetC5_2 Pin=U1-4
+Added Net: Name=NetC5_2
+Added Pin To Net: NetName=NetC8_2 Pin=C8-2
+Added Pin To Net: NetName=NetC8_2 Pin=U2-4
+Added Net: Name=NetC8_2
+Added Member To Class: ClassName=DBUS_PPM Member=Component C2 104
+Added Member To Class: ClassName=DBUS_PPM Member=Component C3 104
+Added Member To Class: ClassName=DBUS_PPM Member=Component C4 104
+Added Member To Class: ClassName=DBUS_PPM Member=Component C5 104
+Added Member To Class: ClassName=DBUS_PPM Member=Component C6 104
+Added Member To Class: ClassName=DBUS_PPM Member=Component C8 104

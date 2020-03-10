@@ -1,0 +1,11 @@
+Added Component: Designator=C?(1206-C)
+Add component. Clean all parameters for all variants
+Added Component: Designator=C?(1206-C)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=VCC_5V Pin=C?-1
+Added Pin To Net: NetName=VCC_5V Pin=C?-1
+Added Pin To Net: NetName=GND Pin=C?-2
+Added Pin To Net: NetName=GND Pin=C?-2
+Added Member To Class: ClassName=DBUS_PPM Member=Component C? 0.1uF
+Added Member To Class: ClassName=DBUS_PPM Member=Component C? 0.1uF
+Added Room: Name=DBUS_PPM

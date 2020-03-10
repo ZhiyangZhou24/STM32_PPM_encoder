@@ -1,0 +1,5 @@
+Change Component Footprint: Designator=P8 Old Footprint=HDR_3*2.54 New Footprint=Pad_2.54*3
+Change Component Footprint: Designator=P9 Old Footprint=HDR_3*2.54 New Footprint=Pad_2.54*3
+Added Member To Class: ClassName=DBUS_PPM Member=Component P8 Header 3
+Added Member To Class: ClassName=DBUS_PPM Member=Component P9 Header 3
+Added Room: Name=DBUS_PPM

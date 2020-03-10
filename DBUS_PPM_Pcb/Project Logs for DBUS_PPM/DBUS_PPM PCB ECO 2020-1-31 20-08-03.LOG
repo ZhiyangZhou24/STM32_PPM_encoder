@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=GND Pin=C2-2
+Removed Pin From Net: NetName=GND Pin=U3-5
+Removed Pin From Net: NetName=GND Pin=U3-6
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=OSC_IN Pin=C1-2
+Added Pin To Net: NetName=OSC_IN Pin=U3-5
+Added Pin To Net: NetName=OSC_IN Pin=Y1-1
+Added Net: Name=OSC_IN
+Added Pin To Net: NetName=OSC_OUT Pin=C2-2
+Added Pin To Net: NetName=OSC_OUT Pin=U3-6
+Added Pin To Net: NetName=OSC_OUT Pin=Y1-3
+Added Net: Name=OSC_OUT
+Added Room: Name=DBUS_PPM

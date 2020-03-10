@@ -1,0 +1,13 @@
+Added Component: Designator=R9(0603-R)
+Add component. Clean all parameters for all variants
+Added Component: Designator=S1(Micro-Key)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=VCC_3V3 Pin=R9-2
+Added Pin To Net: NetName=GND Pin=S1-1
+Added Pin To Net: NetName=KEY1 Pin=R9-1
+Added Pin To Net: NetName=KEY1 Pin=S1-2
+Added Pin To Net: NetName=KEY1 Pin=U3-14
+Added Net: Name=KEY1
+Added Member To Class: ClassName=DBUS_PPM Member=Component R9 100R
+Added Member To Class: ClassName=DBUS_PPM Member=Component S1 KEY?
+Added Room: Name=DBUS_PPM
