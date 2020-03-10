@@ -1,9 +1,0 @@
-Removed Pin From Net: NetName=PWM1 Pin=R7-1
-Removed Pin From Net: NetName=PWM2 Pin=R7-2
-Removed Pin From Net: NetName=PWM3 Pin=R7-3
-Removed Pin From Net: NetName=PWM4 Pin=R7-4
-Added Pin To Net: NetName=PWM4 Pin=R7-1
-Added Pin To Net: NetName=PWM3 Pin=R7-2
-Added Pin To Net: NetName=PWM2 Pin=R7-3
-Added Pin To Net: NetName=PWM1 Pin=R7-4
-Added Room: Name=DBUS_PPM

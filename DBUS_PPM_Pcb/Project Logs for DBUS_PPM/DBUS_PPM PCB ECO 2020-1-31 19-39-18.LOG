@@ -1,4 +1,0 @@
-Added Component: Designator=(OSHW-LOGO-S)
-Add component. Clean all parameters for all variants
-Added Member To Class: ClassName=DBUS_PPM Member=Component  HW_OpenSource
-Added Room: Name=DBUS_PPM
