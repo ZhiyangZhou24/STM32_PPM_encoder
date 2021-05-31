@@ -11,6 +11,7 @@ void SysInit(void)
 {
   NVIC_SetVectorTable(NVIC_VectTab_FLASH, 0);
   NVIC_PriorityGroupConfig(NVIC_PriorityGroup_4);
+	delay_init();
 }
 
 /************************************************

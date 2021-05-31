@@ -3,7 +3,7 @@
 
 /* 包含的头文件 --------------------------------------------------------------*/
 #include "stm32f10x.h"
-
+#include "delay.h"
 
 /* 宏定义 --------------------------------------------------------------------*/
 /*PPM 输出脚*/
@@ -13,7 +13,7 @@
 #define LED_GPIO_CLK              RCC_APB2Periph_GPIOA
 #define RLED_PIN                  GPIO_Pin_5
 #define GLED_PIN                  GPIO_Pin_6
-#define BLED_PIN                  GPIO_Pin_7
+#define BLED_PIN                  GPIO_Pin_6
 #define LED_GPIO_PORT             GPIOA
 
 /* LED开关 */

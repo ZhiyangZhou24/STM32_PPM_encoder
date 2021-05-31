@@ -2,7 +2,7 @@
 .\objects\scheduler.o: ..\Bsp\bsp.h
 .\objects\scheduler.o: ..\Libraries\CMSIS\DeviceSupport\stm32f10x.h
 .\objects\scheduler.o: ..\Libraries\CMSIS\CoreSupport\core_cm3.h
-.\objects\scheduler.o: H:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\scheduler.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\scheduler.o: ..\Libraries\CMSIS\DeviceSupport\system_stm32f10x.h
 .\objects\scheduler.o: ..\App\stm32f10x_conf.h
 .\objects\scheduler.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -29,5 +29,7 @@
 .\objects\scheduler.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 .\objects\scheduler.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\objects\scheduler.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\objects\scheduler.o: ..\App\delay.h
+.\objects\scheduler.o: ..\App\sys.h
 .\objects\scheduler.o: ..\App\Scheduler.h
 .\objects\scheduler.o: ..\App\RGBLED.h

@@ -16,6 +16,8 @@ void DR16_Init(void)
 	/* 时钟配置 */
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB , ENABLE);
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1, ENABLE);
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);
+	GPIO_PinRemapConfig(GPIO_Remap_USART1, ENABLE);
 
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_7;                    //UART Rx
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
@@ -23,10 +25,15 @@ void DR16_Init(void)
 
 	/* NVIC配置 */
 	NVIC_InitStructure.NVIC_IRQChannel = USART1_IRQn;
-	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1;
+	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 4;
 	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
 	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
 	NVIC_Init(&NVIC_InitStructure);
+/* TX PB6 */
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_6;
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(GPIOB, &GPIO_InitStructure);
 
 	/* UART配置 */
 	USART_InitStructure.USART_BaudRate = 100000;                       //波特率100K
@@ -36,11 +43,11 @@ void DR16_Init(void)
 	USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None; //无流控
 	USART_InitStructure.USART_Mode = USART_Mode_Rx;                    //收功能
 	USART_Init(USART1, &USART_InitStructure);
-
-	USART_ClearFlag(USART1, USART_FLAG_RXNE | USART_FLAG_TC);
 	USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);                  //接收中断
 
 	USART_Cmd(USART1, ENABLE);                                      //使能UART1
+	
+	USART_ClearFlag(USART1, USART_FLAG_RXNE);
 }
 //全局通道变量
 u16 DBUS_Link[6];
@@ -143,7 +150,28 @@ void USART1_IRQHandler(void)
 		DBUS_timestamp=TimeStamp_1ms;
 	}
 }
+//USART1 发送单字节
+void uart1_sendbyte(unsigned char dat)
+{
+	unsigned char error=0;
+	while((USART1->SR&0x40)==0)
+	{
+		error++;
+		if(error>100)
+		return;
+	}
+	USART1->DR=(u8) dat;   
+}
 
+//USART1 发送字符串
+void uart1_send_string(unsigned char *buf,unsigned short length)
+{
+	u16 i;
+	for(i=0;i<length;i++)//循环发送数据
+	{
+		uart1_sendbyte(*buf++);
+	}
+}
 
 /************************************************
 函数名称 ： USART_Initializes

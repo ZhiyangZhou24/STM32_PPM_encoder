@@ -25,6 +25,6 @@
 /* º¯ÊýÉêÃ÷ ------------------------------------------------------------------*/
 void USART_Initializes(void);
 void RC_Duty( float T);
-
+void uart1_send_string(unsigned char *buf,unsigned short length);
 #endif /* _BSP_USART_H */
 

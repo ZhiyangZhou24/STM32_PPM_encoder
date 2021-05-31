@@ -2,7 +2,7 @@
 .\objects\bsp_usart.o: ..\Bsp\bsp_usart.h
 .\objects\bsp_usart.o: ..\Libraries\CMSIS\DeviceSupport\stm32f10x.h
 .\objects\bsp_usart.o: ..\Libraries\CMSIS\CoreSupport\core_cm3.h
-.\objects\bsp_usart.o: H:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\bsp_usart.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\bsp_usart.o: ..\Libraries\CMSIS\DeviceSupport\system_stm32f10x.h
 .\objects\bsp_usart.o: ..\App\stm32f10x_conf.h
 .\objects\bsp_usart.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -29,5 +29,7 @@
 .\objects\bsp_usart.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 .\objects\bsp_usart.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\objects\bsp_usart.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
-.\objects\bsp_usart.o: H:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\bsp_usart.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\bsp_usart.o: ..\Bsp\bsp.h
+.\objects\bsp_usart.o: ..\App\delay.h
+.\objects\bsp_usart.o: ..\App\sys.h

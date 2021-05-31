@@ -3,7 +3,7 @@
 .\objects\rgbled.o: ..\Bsp\bsp.h
 .\objects\rgbled.o: ..\Libraries\CMSIS\DeviceSupport\stm32f10x.h
 .\objects\rgbled.o: ..\Libraries\CMSIS\CoreSupport\core_cm3.h
-.\objects\rgbled.o: H:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\rgbled.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\rgbled.o: ..\Libraries\CMSIS\DeviceSupport\system_stm32f10x.h
 .\objects\rgbled.o: ..\App\stm32f10x_conf.h
 .\objects\rgbled.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -30,3 +30,5 @@
 .\objects\rgbled.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 .\objects\rgbled.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\objects\rgbled.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\objects\rgbled.o: ..\App\delay.h
+.\objects\rgbled.o: ..\App\sys.h

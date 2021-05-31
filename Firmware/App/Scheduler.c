@@ -6,9 +6,10 @@ void Task_Scheduler(void)
 {
 	while(1)
 	{
-		if(TimeStamp_1ms%20) //20ms
-		{
 			RGB_Task();
-		}
+			delay_ms(500);
+		//uart1_send_string("hello!\r\n");
+		
+		//USART_SendData(USART1,0xaa);
 	}
 }

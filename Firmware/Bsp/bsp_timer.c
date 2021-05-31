@@ -47,7 +47,7 @@ static void TIM4_Int_Init(u16 arr,u16 psc)
 
 	//中断优先级NVIC设置
 	NVIC_InitStructure.NVIC_IRQChannel = TIM4_IRQn;  //TIM4中断
-	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;  //先占优先级0级
+	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1;  //先占优先级0级
 	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;  //从优先级3级
 	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE; //IRQ通道被使能
 	NVIC_Init(&NVIC_InitStructure);  //初始化NVIC寄存器
@@ -101,39 +101,47 @@ void TIM4_IRQHandler(void)   //TIM3中断
 	  O_PPM[3]=CH_filter[3]+1;//thr
 	  O_PPM[4]=CH_filter[4]+1;//left
 	  O_PPM[5]=(unsigned int)1;
-		O_PPM[6]=CH_filter[5]+1;
+		O_PPM[6]=100+1;
+		
+		O_PPM[0]=1500+1;//roll
+	  O_PPM[1]=1500+1;//pitch
+	  O_PPM[2]=1500+1;//yaw
+	  O_PPM[3]=1500+1;//thr
+	  O_PPM[4]=1500+1;//left
+	  O_PPM[5]=1500;
+		O_PPM[6]=1500+1;
 		switch(count)//通道输出计算
 		{
-			case 1:PPM_PIN(0);Set_Interval(500);lastad[0]=(unsigned int)O_PPM[1]; //1通道  0.5MS等待时间
-			 		 T_value[0]=(500+lastad[0]); break;//提前计算下次高电平时间
+			case 1:PPM_PIN(0);Set_Interval(400);lastad[0]=(unsigned int)O_PPM[1]; //1通道  0.5MS等待时间
+			 		 T_value[0]=(lastad[0]-400); break;//提前计算下次高电平时间
 			case 2:PPM_PIN(1);Set_Interval(T_value[0]); break;
 
-			case 3:PPM_PIN(0);Set_Interval(500);lastad[1]=(unsigned int)O_PPM[0]; //2通道
-			 		 T_value[1]=(500+lastad[1]); break;
+			case 3:PPM_PIN(0);Set_Interval(400);lastad[1]=(unsigned int)O_PPM[0]; //2通道
+			 		 T_value[1]=(lastad[1]-400); break;
 			case 4:PPM_PIN(1);Set_Interval(T_value[1]);break;
 
-			case 5:PPM_PIN(0);Set_Interval(500);lastad[2]=(unsigned int)O_PPM[3]; //3通道
-			 	   T_value[2]=(500+lastad[2]); break;
+			case 5:PPM_PIN(0);Set_Interval(400);lastad[2]=(unsigned int)O_PPM[3]; //3通道
+			 	   T_value[2]=(lastad[2]-400); break;
 			case 6:PPM_PIN(1);Set_Interval(T_value[2]);break;
 			
-			case 7:PPM_PIN(0);Set_Interval(500);lastad[3]=(unsigned int)O_PPM[2]; //4通道
-			 	   T_value[3]=(500+lastad[3]); break;
+			case 7:PPM_PIN(0);Set_Interval(400);lastad[3]=(unsigned int)O_PPM[2]; //4通道
+			 	   T_value[3]=(lastad[3]-400); break;
 			case 8:PPM_PIN(1);Set_Interval(T_value[3]);break;
 
-			case 9:PPM_PIN(0);Set_Interval(500);lastad[4]=(unsigned int)O_PPM[4]; //5通道
-			 		 T_value[4]=(500+lastad[4]); break;
+			case 9:PPM_PIN(0);Set_Interval(400);lastad[4]=(unsigned int)O_PPM[4]; //5通道
+			 		 T_value[4]=(lastad[4]-400); break;
 			case 10:PPM_PIN(1);Set_Interval(T_value[4]);break;
 
-			case 11:PPM_PIN(0);Set_Interval(500);lastad[5]=(unsigned int)O_PPM[5];//6通道 为0
-			 		 T_value[5]=(500+lastad[5]); break;
+			case 11:PPM_PIN(0);Set_Interval(400);lastad[5]=(unsigned int)O_PPM[5];//6通道 为0
+			 		 T_value[5]=(lastad[5]-400); break;
 			case 12:PPM_PIN(1);Set_Interval(T_value[5]);break;
 	
-			case 13:PPM_PIN(0);Set_Interval(500);lastad[6]=(unsigned int)O_PPM[6];//7通道
-			 		 T_value[6]=(500+lastad[6]); break;
+			case 13:PPM_PIN(0);Set_Interval(400);lastad[6]=(unsigned int)O_PPM[6];//7通道
+			 		 T_value[6]=(lastad[6]-400); break;
 			case 14:PPM_PIN(1);Set_Interval(T_value[6]);break;
 
-			case 15:PPM_PIN(0);Set_Interval(500);break;
-			case 16:PPM_PIN(1);for(n=0;n<7;n++)T_value_f +=T_value[n];Set_Interval(20000-T_value_f-8*500);count=0;T_value_f = 0;break;
+			case 15:PPM_PIN(0);Set_Interval(400);break;
+			case 16:PPM_PIN(1);for(n=0;n<7;n++)T_value_f +=T_value[n];Set_Interval(20000-T_value_f-8*400);count=0;T_value_f = 0;break;
 			default : break;
 		}
 	}
@@ -152,6 +160,6 @@ static void Timestamp_TIM_Configuration(void)
 *************************************************/
 void TIM_Initializes(void)
 {
-  Timestamp_TIM_Configuration();
+  //Timestamp_TIM_Configuration();
 	TIM4_Int_Init(20-1,SystemCoreClock/1000);//20ms
 }

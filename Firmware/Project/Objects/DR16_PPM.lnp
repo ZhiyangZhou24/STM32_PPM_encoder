@@ -10,6 +10,8 @@
 ".\objects\stm32f10x_it.o"
 ".\objects\scheduler.o"
 ".\objects\rgbled.o"
+".\objects\delay.o"
+".\objects\sys.o"
 ".\objects\bsp.o"
 ".\objects\bsp_timer.o"
 ".\objects\bsp_usart.o"

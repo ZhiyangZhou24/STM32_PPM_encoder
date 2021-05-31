@@ -2,7 +2,7 @@
 .\objects\main.o: ..\Bsp\bsp.h
 .\objects\main.o: ..\Libraries\CMSIS\DeviceSupport\stm32f10x.h
 .\objects\main.o: ..\Libraries\CMSIS\CoreSupport\core_cm3.h
-.\objects\main.o: H:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\main.o: ..\Libraries\CMSIS\DeviceSupport\system_stm32f10x.h
 .\objects\main.o: ..\App\stm32f10x_conf.h
 .\objects\main.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -29,4 +29,6 @@
 .\objects\main.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 .\objects\main.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\objects\main.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\objects\main.o: ..\App\delay.h
+.\objects\main.o: ..\App\sys.h
 .\objects\main.o: ..\App\Scheduler.h
